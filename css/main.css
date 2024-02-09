@@ -1,0 +1,156 @@
+@import url(./fonts.css);
+
+/* CUSTOM PROPS */
+
+:root{
+    --dark: #111517;
+    --grey: #848484;
+    --bg-color: #FAFAFA;
+    --white: #FFF;
+    --nunitosans: "NunitoSans";
+    --bakc-color:#fff;
+}
+
+/* GLOBAL STYLES */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: var(--nunitosans);
+}
+
+/* CONTAINER */
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* SITE-HEADER */
+.site-header {
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    border-color: var(white);
+}
+.site-header__logo {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 800;
+}
+.site-darkmode {
+    border: unset;
+    background-color: transparent;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* SITE-HEADER */
+
+/* SITE MAIN */
+.site-main{
+    padding-top: 48px;
+    padding-bottom: 45px;
+}
+/* search */
+.search-icon{
+    color: var(--grey);
+}
+.input-group{
+    width: 100%;
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+.input-group-text{
+    background-color: var(--white);
+    border: unset;
+}
+.form-control{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    column-gap: 24px;
+    border-left: unset;
+    border: unset;
+}
+.form-control::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey);
+    list-style: 20px;
+}
+.form-select{
+    padding: unset;
+    padding: 15px 22px 15px 24px;
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: var(--nunitosans);
+    border: unset;
+    box-shadow: 0px 2px 9px 0px rgba(0 ,0,0, 0.05) ;
+    border-radius: 5px;
+
+}
+.form-select > option{
+    border: unset;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--dark);
+}
+.card{
+    border: unset;
+    border-radius: 5px;
+box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+overflow: hidden;
+}
+.card-img-top{
+    width: 100%;
+}
+.card-body{
+    padding: unset;
+    padding: 24px;
+    background-color: var(--bakc-color);
+    overflow: hidden;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    color: var(--dark);
+    margin-bottom: 16px;
+}
+.card-taxt{
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+.card-text__span{
+    font-weight: 600;
+}
